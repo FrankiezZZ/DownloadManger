@@ -28,13 +28,14 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/html.mp4"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    //建立连接，立即执行
-    [NSURLConnection connectionWithRequest:request delegate:self];
-    
-    //[[NSRunLoop currentRunLoop] run];
-    //asdasdasf
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        NSURL *url = [NSURL URLWithString:@"http://127.0.0.1/html.mp4"];
+        NSURLRequest *request = [NSURLRequest requestWithURL:url];
+        //建立连接，立即执行
+        [NSURLConnection connectionWithRequest:request delegate:self];
+        //打开runloop，
+        [[NSRunLoop currentRunLoop] run];
+    });
 }
 
 //获得响应
@@ -53,7 +54,7 @@
 //    NSLog(@"did receive:%@",data);
     self.currentFileLength += data.length;
     float progressPercent = (float)self.currentFileLength / self.fileLength;
-    NSLog(@"have downloaded: %f", progressPercent);
+    NSLog(@"have downloaded: %f  %@", progressPercent, [NSThread currentThread]);
     [self.fileStream write:data.bytes maxLength:data.length];
 }
 
