@@ -15,6 +15,8 @@
 		A08DDA681B2810DE00F5D576 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A08DDA671B2810DE00F5D576 /* Images.xcassets */; };
 		A08DDA6B1B2810DE00F5D576 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08DDA691B2810DE00F5D576 /* LaunchScreen.xib */; };
 		A08DDA771B2810DE00F5D576 /* _2____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = A08DDA761B2810DE00F5D576 /* _2____Tests.m */; };
+		A0D9AB841B2964FF00FAFA44 /* DownloadOpration.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9AB831B2964FF00FAFA44 /* DownloadOpration.m */; };
+		A0D9AB871B29711300FAFA44 /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D9AB861B29711300FAFA44 /* DownloadManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		A08DDA701B2810DE00F5D576 /* 02-下载器Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "02-下载器Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08DDA751B2810DE00F5D576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08DDA761B2810DE00F5D576 /* _2____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_2____Tests.m"; sourceTree = "<group>"; };
+		A0D9AB821B2964FF00FAFA44 /* DownloadOpration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOpration.h; sourceTree = "<group>"; };
+		A0D9AB831B2964FF00FAFA44 /* DownloadOpration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOpration.m; sourceTree = "<group>"; };
+		A0D9AB851B29711300FAFA44 /* DownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadManager.h; sourceTree = "<group>"; };
+		A0D9AB861B29711300FAFA44 /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,10 @@
 				A08DDA621B2810DE00F5D576 /* ViewController.m */,
 				A088F3C71B2935160030CEEA /* ProgressButton.h */,
 				A088F3C81B2935160030CEEA /* ProgressButton.m */,
+				A0D9AB821B2964FF00FAFA44 /* DownloadOpration.h */,
+				A0D9AB831B2964FF00FAFA44 /* DownloadOpration.m */,
+				A0D9AB851B29711300FAFA44 /* DownloadManager.h */,
+				A0D9AB861B29711300FAFA44 /* DownloadManager.m */,
 				A08DDA641B2810DE00F5D576 /* Main.storyboard */,
 				A08DDA671B2810DE00F5D576 /* Images.xcassets */,
 				A08DDA691B2810DE00F5D576 /* LaunchScreen.xib */,
@@ -227,7 +237,9 @@
 				A088F3C91B2935160030CEEA /* ProgressButton.m in Sources */,
 				A08DDA631B2810DE00F5D576 /* ViewController.m in Sources */,
 				A08DDA601B2810DE00F5D576 /* AppDelegate.m in Sources */,
+				A0D9AB841B2964FF00FAFA44 /* DownloadOpration.m in Sources */,
 				A08DDA5D1B2810DE00F5D576 /* main.m in Sources */,
+				A0D9AB871B29711300FAFA44 /* DownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
