@@ -34,6 +34,7 @@
     [NSURLConnection connectionWithRequest:request delegate:self];
     
     //[[NSRunLoop currentRunLoop] run];
+    //asdasdasf
 }
 
 //获得响应
