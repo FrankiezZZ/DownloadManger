@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A088F3C91B2935160030CEEA /* ProgressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A088F3C81B2935160030CEEA /* ProgressButton.m */; };
 		A08DDA5D1B2810DE00F5D576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A08DDA5C1B2810DE00F5D576 /* main.m */; };
 		A08DDA601B2810DE00F5D576 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A08DDA5F1B2810DE00F5D576 /* AppDelegate.m */; };
 		A08DDA631B2810DE00F5D576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A08DDA621B2810DE00F5D576 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A088F3C71B2935160030CEEA /* ProgressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressButton.h; sourceTree = "<group>"; };
+		A088F3C81B2935160030CEEA /* ProgressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressButton.m; sourceTree = "<group>"; };
 		A08DDA571B2810DE00F5D576 /* 02-下载器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-下载器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A08DDA5B1B2810DE00F5D576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08DDA5C1B2810DE00F5D576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				A08DDA5F1B2810DE00F5D576 /* AppDelegate.m */,
 				A08DDA611B2810DE00F5D576 /* ViewController.h */,
 				A08DDA621B2810DE00F5D576 /* ViewController.m */,
+				A088F3C71B2935160030CEEA /* ProgressButton.h */,
+				A088F3C81B2935160030CEEA /* ProgressButton.m */,
 				A08DDA641B2810DE00F5D576 /* Main.storyboard */,
 				A08DDA671B2810DE00F5D576 /* Images.xcassets */,
 				A08DDA691B2810DE00F5D576 /* LaunchScreen.xib */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A088F3C91B2935160030CEEA /* ProgressButton.m in Sources */,
 				A08DDA631B2810DE00F5D576 /* ViewController.m in Sources */,
 				A08DDA601B2810DE00F5D576 /* AppDelegate.m in Sources */,
 				A08DDA5D1B2810DE00F5D576 /* main.m in Sources */,
@@ -416,6 +422,7 @@
 				A08DDA7C1B2810DE00F5D576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A08DDA7D1B2810DE00F5D576 /* Build configuration list for PBXNativeTarget "02-下载器Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				A08DDA7F1B2810DE00F5D576 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "ProgressButton.h"
 @interface ViewController ()<NSURLConnectionDataDelegate>
 
 @property (strong, nonatomic) NSOutputStream *fileStream;
@@ -20,6 +20,8 @@
 @property (strong, nonatomic) NSURLConnection *connection;
 ///  目标文件夹
 @property (copy, nonatomic) NSString *targetPath;
+
+@property (weak, nonatomic) IBOutlet ProgressButton *progressBtn;
 
 @end
 
@@ -47,6 +49,10 @@
         if (self.currentFileLength == self.fileLength) {
             //一样大，文件已经下载完成
             NSLog(@"下载完成");
+            //刷新UI
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                self.progressBtn.progress = 1;
+            });
             return;
         }
         
@@ -109,7 +115,11 @@
 //    NSLog(@"did receive:%@",data);
     self.currentFileLength += data.length;
     float progressPercent = (float)self.currentFileLength / self.fileLength;
-    NSLog(@"have downloaded: %f  %@", progressPercent, [NSThread currentThread]);
+    //NSLog(@"have downloaded: %f  %@", progressPercent, [NSThread currentThread]);
+    //主线程刷新UI
+    dispatch_sync(dispatch_get_main_queue(), ^{
+        self.progressBtn.progress = progressPercent;
+    });
     [self.fileStream write:data.bytes maxLength:data.length];
 }
 
